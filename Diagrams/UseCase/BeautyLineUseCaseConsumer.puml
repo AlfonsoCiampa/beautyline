@@ -4,18 +4,18 @@ actor "Consumer"
 
 
 rectangle System{
-	Consumer ->  (Login consumer)
-	Consumer -> (Display/Add/Delete Booking)
+	Consumer -down->  (Login consumer)
+	Consumer -down-> (Display/Add/Delete Booking)
 	(Display/Add/Delete Booking) ..> (Login consumer): <<include>>
-	Consumer -> (Display/Update Consumer)
+	Consumer -down-> (Display/Update Consumer)
 	(Display/Update Consumer) ..> (Login consumer): <<include>>
-	Consumer -> (Display Gift)
+	Consumer -down-> (Display Gift)
 	(Display Gift) ..> (Login consumer): <<include>>
-	Consumer -> (Add GiveProduct)
+	Consumer -down-> (Add GiveProduct)
 	(Add GiveProduct) ..> (Login consumer): <<include>>
-	Consumer -> (Display/Add Order)
+	Consumer -down-> (Display/Add Order)
 	(Display/Add Order) ..> (Login consumer): <<include>>
-	Consumer -> (Display/Add/Update/Delete Service Comment)
+	Consumer -down-> (Display/Add/Update/Delete Service Comment)
 	(Display/Add/Update/Delete Service Comment) ..> (Login consumer): <<include>>
 }
 @enduml

@@ -4,13 +4,13 @@ actor "Generic"
 
 
 rectangle System{
-	Generic -> (Register)
-	Generic -> (Login)
-	Generic -> (Forgot password)
-	Generic -> (Display Event)
-	Generic -> (Display Package)
-	Generic -> (Display Treatment)
-	Generic -> (Display Product)
-	Generic -> (Display Comment)
+	Generic -down-> (Register)
+	Generic -down-> (Login)
+	Generic -down-> (Forgot password)
+	Generic -down-> (Display Event)
+	Generic -down-> (Display Package)
+	Generic -down-> (Display Treatment)
+	Generic -down-> (Display Product)
+	Generic -down-> (Display Comment)
 }
 @enduml

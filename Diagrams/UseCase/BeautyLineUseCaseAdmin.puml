@@ -1,0 +1,31 @@
+@startuml
+left to right direction
+actor "Admin"
+
+
+rectangle System{
+	Admin ->  (Login admin)
+	Admin -> (Display/Add/Update/Delete Consumer)
+	(Display/Add/Update/Delete Consumer) ..>  (Login admin): <<include>>
+	Admin -> (Display/Add/Update/Delete Admin)
+	(Display/Add/Update/Delete Admin) ..>  (Login admin): <<include>>
+	Admin -> (Display/Add/Update/Delete Booking configurations)
+	(Display/Add/Update/Delete Booking configurations) ..>  (Login admin): <<include>>
+	Admin -> (Display/Add/Update/Delete Booking)
+	(Display/Add/Update/Delete Booking) ..>  (Login admin): <<include>>
+	Admin -> (Display/Add/Update/Delete Event)
+	(Display/Add/Update/Delete Event) ..>  (Login admin): <<include>>
+	Admin -> (Display/Add/Update/Delete Gift)
+	(Display/Add/Update/Delete Gift) ..>  (Login admin): <<include>>
+	Admin -> (Display/Delete Order)
+	(Display/Delete Order) ..>  (Login admin): <<include>>
+	Admin -> (Display/Add/Update/Delete Package)
+	(Display/Add/Update/Delete Package) ..>  (Login admin): <<include>>
+	Admin -> (Display/Add/Update/Delete Product)
+	(Display/Add/Update/Delete Product) ..>  (Login admin): <<include>>
+	Admin -> (Display/Add/Update/Delete Treatment)
+	(Display/Add/Update/Delete Treatment) ..>  (Login admin): <<include>>
+	Admin -> (Display/Add/Update/Delete ServiceComment)
+	(Display/Add/Update/Delete ServiceComment) ..>  (Login admin): <<include>>
+}
+@enduml

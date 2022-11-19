@@ -1,0 +1,16 @@
+@startuml
+left to right direction
+actor "Generic"
+
+
+rectangle System{
+	Generic -> (Register)
+	Generic -> (Login)
+	Generic -> (Forgot password)
+	Generic -> (Display Event)
+	Generic -> (Display Package)
+	Generic -> (Display Treatment)
+	Generic -> (Display Product)
+	Generic -> (Display Comment)
+}
+@enduml
